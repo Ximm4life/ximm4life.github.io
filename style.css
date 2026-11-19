@@ -1,0 +1,404 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #0b1020;
+  color: #f5f6ff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #a995ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #c4b6ff;
+  text-decoration: underline;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  padding: 25px 8%;
+  border-bottom: 1px solid #252c43;
+  background: #0b1020;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+header h1 span {
+  color: #9b83ff;
+}
+
+header p,
+.hero p {
+  color: #aeb6d0;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 16px 20px;
+  background: #11182b;
+  border-bottom: 1px solid #252c43;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-nav a {
+  color: #c8cde0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: #9b83ff;
+  text-decoration: none;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+  width: min(900px, 92%);
+  margin: 35px auto;
+}
+
+#tools {
+  scroll-margin-top: 90px;
+}
+
+.hero {
+  text-align: center;
+  padding: 35px 10px;
+}
+
+.hero h2 {
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.2;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+/* =========================
+   PANELS
+========================= */
+
+.panel {
+  background: #151d33;
+  border: 1px solid #2b3654;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 24px 0;
+  scroll-margin-top: 90px;
+  transition: border-color 0.2s ease;
+}
+
+.panel:hover {
+  border-color: #6554b5;
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.panel h3 {
+  margin-top: 25px;
+  color: #b8a9ff;
+}
+
+.panel p {
+  color: #c1c8df;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  color: #c8cde0;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  background: #0d1427;
+  color: white;
+  border: 1px solid #394665;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  border-color: #9b83ff;
+  box-shadow: 0 0 0 3px rgba(155, 131, 255, 0.12);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  margin-top: 18px;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #8065f5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #9b83ff;
+  transform: translateY(-2px);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #b8a9ff;
+  outline-offset: 3px;
+}
+
+.secondary {
+  background: #34415f;
+}
+
+.secondary:hover {
+  background: #465678;
+}
+
+/* =========================
+   GENERATED RESULTS
+========================= */
+
+.result {
+  margin-top: 20px;
+  padding: 18px;
+  min-height: 100px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  background: #0d1427;
+  border: 1px solid #283653;
+  border-radius: 10px;
+  color: #e4e7f5;
+}
+
+.post {
+  padding: 15px;
+  margin-top: 12px;
+  border-radius: 9px;
+  background: #0d1427;
+  border: 1px solid #394665;
+}
+
+.post button {
+  margin-top: 10px;
+  background: #a34454;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+#faq details {
+  background: #0d1427;
+  border: 1px solid #303c5a;
+  border-radius: 10px;
+  margin: 12px 0;
+  padding: 16px;
+}
+
+#faq summary {
+  color: #e5e0ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#faq details p {
+  margin-bottom: 0;
+  color: #aeb6d0;
+}
+
+#faq details[open] {
+  border-color: #8065f5;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 13px 20px;
+  background: #8065f5;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-button:hover {
+  background: #9b83ff;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  margin-top: 60px;
+  padding: 45px 20px;
+  text-align: center;
+  background: #080d19;
+  border-top: 1px solid #252c43;
+  color: #aeb6d0;
+}
+
+.site-footer h2 {
+  color: white;
+  font-size: 27px;
+  margin: 0;
+}
+
+.site-footer h2 span {
+  color: #9b83ff;
+}
+
+.site-footer p {
+  margin: 12px 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  max-width: 750px;
+  margin: 25px auto;
+}
+
+.footer-links a {
+  color: #c8cde0;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #9b83ff;
+}
+
+.copyright {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #252c43;
+  font-size: 13px;
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 22px 5%;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  .main-nav {
+    gap: 14px;
+    padding: 14px 10px;
+  }
+
+  .main-nav a {
+    font-size: 13px;
+  }
+
+  main {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  .hero {
+    padding: 25px 5px;
+  }
+
+  .panel {
+    padding: 19px;
+    margin: 18px 0;
+  }
+
+  .panel h2 {
+    font-size: 21px;
+  }
+
+  button {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    gap: 15px;
+  }
+
+  .site-footer {
+    padding: 35px 15px;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
