@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="google-site-verification" content="qHf6ir703wQy2sm4Ln4_Q0HRvJXOMgfngCzduKn9Qmg">
+
+  <meta name="description" content="CreatorFlow is a free content creation toolkit. Generate video ideas, YouTube titles, TikTok captions, scripts, hooks, thumbnails, and explore free creator resources.">
+
+  <meta name="theme-color" content="#101827">
+
+  <title>CreatorFlow | Create Better Content</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Creator<span>Flow</span></h1>
+    <p>Your free content creation toolkit.</p>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#tools">Tools</a>
+    <a href="#resources">Resources</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <h2>Create Better Content. Grow Faster.</h2>
+      <p>
+        Get content ideas, titles, captions, scripts, and plan
+        your next posts with CreatorFlow.
+      </p>
+    </section>
+
+    <!-- CREATOR TOOLS -->
+    <div id="tools">
+
+      <section class="panel">
+        <h2>Content Generator</h2>
+
+        <label for="tool">What do you want to create?</label>
+        <select id="tool">
+          <option value="ideas">Video ideas</option>
+          <option value="titles">YouTube titles</option>
+          <option value="captions">TikTok captions</option>
+          <option value="scripts">Video scripts</option>
+        </select>
+
+        <label for="niche">Your content topic</label>
+        <input id="niche" placeholder="Example: gaming, fitness, cooking">
+
+        <label for="platform">Your platform</label>
+        <select id="platform">
+          <option>YouTube</option>
+          <option>TikTok</option>
+          <option>Instagram</option>
+        </select>
+
+        <button id="generate">Generate content</button>
+
+        <div id="result" class="result" aria-live="polite">
+          Your results will appear here.
+        </div>
+
+        <button id="copy" class="secondary">Copy result</button>
+      </section>
+
+      <section class="panel">
+        <h2>Content Planner</h2>
+
+        <label for="post">Content idea</label>
+        <input id="post" placeholder="What are you planning to post?">
+
+        <label for="postDate">Posting date</label>
+        <input id="postDate" type="date">
+
+        <button id="addPost">Add to planner</button>
+
+        <div id="planner"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Viral Hook Generator</h2>
+
+        <label for="hookTopic">What is your video about?</label>
+        <input id="hookTopic" placeholder="Example: gaming">
+
+        <button id="generateHook">Generate Hooks</button>
+
+        <div id="hookResult" class="result">
+          Your hooks will appear here.
+        </div>
+
+        <button id="copyHook" class="secondary">Copy Hooks</button>
+      </section>
+
+      <section class="panel">
+        <h2>Thumbnail Idea Generator</h2>
+
+        <label for="thumbnailTopic">What is your video about?</label>
+        <input id="thumbnailTopic" placeholder="Example: gaming">
+
+        <button id="generateThumbnail">
+          Generate Thumbnail Ideas
+        </button>
+
+        <div id="thumbnailResult" class="result">
+          Your thumbnail ideas will appear here.
+        </div>
+
+        <button id="copyThumbnail" class="secondary">
+          Copy Ideas
+        </button>
+      </section>
+
+      <section class="panel">
+        <h2>Video Description Generator</h2>
+
+        <label for="descriptionTopic">What is your video about?</label>
+        <input id="descriptionTopic" placeholder="Example: Minecraft survival">
+
+        <label for="descriptionPlatform">Choose your platform</label>
+        <select id="descriptionPlatform">
+          <option>YouTube</option>
+          <option>TikTok</option>
+          <option>Instagram</option>
+        </select>
+
+        <button id="generateDescription">
+          Generate Description
+        </button>
+
+        <div id="descriptionResult" class="result">
+          Your description will appear here.
+        </div>
+
+        <button id="copyDescription" class="secondary">
+          Copy Description
+        </button>
+      </section>
+
+    </div>
+
+    <!-- CREATOR RESOURCES -->
+    <section class="panel" id="resources">
+      <h2>Creator Resources</h2>
+
+      <p>
+        Explore practical guides to help you plan content,
+        improve your videos, and develop your creative skills.
+        These resources are free to read.
+      </p>
+
+      <article>
+        <h3>1. How to Come Up With YouTube Video Ideas</h3>
+
+        <p>
+          Coming up with video ideas can be one of the hardest
+          parts of creating content. A useful way to start is
+          by thinking about the questions your audience might ask.
+        </p>
+
+        <h4>Start with your topic</h4>
+
+        <p>
+          Choose a subject you enjoy creating content about.
+          For example, a gaming creator could make videos about
+          beginner tips, game updates, challenges, tutorials,
+          reviews, or interesting moments from gameplay.
+        </p>
+
+        <h4>Turn one idea into several videos</h4>
+
+        <p>
+          A single topic can lead to multiple videos. If your
+          topic is Minecraft survival, you could create a beginner
+          guide, a building tutorial, a resource gathering guide,
+          and a video documenting your progress.
+        </p>
+
+        <h4>Keep an idea list</h4>
+
+        <p>
+          Write down ideas whenever they come to mind. Organize
+          them into categories and choose the ones you can
+          realistically create. CreatorFlow's Content Planner
+          can help you organize your upcoming posts.
+        </p>
+
+        <h4>Helpful tip</h4>
+
+        <p>
+          Focus on making videos that answer a question, teach
+          something useful, entertain viewers, or share an
+          interesting experience.
+        </p>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3>2. How to Write Better TikTok Captions</h3>
+
+        <p>
+          A caption gives viewers additional context about your
+          video. It can explain what is happening, introduce the
+          topic, or encourage people to join the conversation.
+        </p>
+
+        <h4>Make the first sentence useful</h4>
+
+        <p>
+          Start with something that clearly relates to the video.
+          Avoid long introductions that make viewers work to
+          understand what your content is about.
+        </p>
+
+        <h4>Use relevant keywords</h4>
+
+        <p>
+          Include words that naturally describe your video.
+          For a cooking video, relevant words might include
+          the recipe name, ingredients, or cooking method.
+          Keep the wording natural rather than repeating
+          keywords unnecessarily.
+        </p>
+
+        <h4>Use hashtags thoughtfully</h4>
+
+        <p>
+          Choose a small number of relevant hashtags that
+          accurately describe your content. Hashtags should
+          help categorize a post, not replace a useful caption.
+        </p>
+
+        <h4>Invite conversation</h4>
+
+        <p>
+          When appropriate, ask a simple question related to
+          the video. For example, a gaming creator might ask
+          viewers which game they would like to see next.
+        </p>
+
+        <h4>Helpful tip</h4>
+
+        <p>
+          Read your caption before publishing. Make sure it is
+          easy to understand and accurately represents the video.
+        </p>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3>3. How to Create Engaging Video Hooks</h3>
+
+        <p>
+          A video hook is the opening that introduces your content
+          and gives viewers a reason to keep watching. A clear
+          beginning helps people understand what they are about
+          to see.
+        </p>
+
+        <h4>Introduce the main idea quickly</h4>
+
+        <p>
+          Avoid spending too much time introducing yourself
+          before explaining the video's topic. Show or explain
+          what makes the video worth watching.
+        </p>
+
+        <h4>Use a question</h4>
+
+        <p>
+          A relevant question can introduce a topic naturally.
+          For example: "Can a beginner complete this challenge?"
+          The rest of the video should address the question.
+        </p>
+
+        <h4>Show something interesting</h4>
+
+        <p>
+          You can begin with an interesting moment, a surprising
+          result, or a preview of something that happens later
+          in the video. Make sure the opening accurately
+          represents the content.
+        </p>
+
+        <h4>Avoid misleading hooks</h4>
+
+        <p>
+          A strong hook should create interest without promising
+          something the video does not deliver. Trust is important
+          when building a long-term audience.
+        </p>
+
+        <h4>Helpful tip</h4>
+
+        <p>
+          Write several opening lines and choose the one that
+          communicates your video's main idea most clearly.
+          Try the CreatorFlow Viral Hook Generator for inspiration.
+        </p>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3>4. How to Plan a Week of Social Media Content</h3>
+
+        <p>
+          Planning content ahead of time can make publishing
+          more organized. Instead of deciding what to post
+          every day, create a simple schedule for the week.
+        </p>
+
+        <h4>Choose your weekly topics</h4>
+
+        <p>
+          Start by writing down a few topics you want to cover.
+          You might include tutorials, entertaining videos,
+          personal experiences, reviews, or answers to common
+          audience questions.
+        </p>
+
+        <h4>Give each post a purpose</h4>
+
+        <p>
+          Decide what each piece of content should accomplish.
+          Some posts may teach something, while others may
+          entertain or introduce a new topic.
+        </p>
+
+        <h4>Create a realistic schedule</h4>
+
+        <p>
+          Choose posting days that fit your available time.
+          A manageable schedule is more useful than a demanding
+          schedule that becomes difficult to maintain.
+        </p>
+
+        <h4>Prepare content in advance</h4>
+
+        <p>
+          When possible, prepare titles, captions, scripts,
+          and thumbnail ideas before recording or publishing.
+          This can make the creative process easier.
+        </p>
+
+        <h4>Helpful tip</h4>
+
+        <p>
+          Use the CreatorFlow Content Planner to record ideas
+          and posting dates. Review your schedule regularly
+          and adjust it when needed.
+        </p>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3>5. How to Make Better YouTube Thumbnails</h3>
+
+        <p>
+          A YouTube thumbnail gives potential viewers a quick
+          visual introduction to your video. A clear thumbnail
+          should communicate the subject without overwhelming
+          the viewer with too many details.
+        </p>
+
+        <h4>Focus on one main idea</h4>
+
+        <p>
+          Choose one subject or moment to emphasize. Too many
+          competing images can make a thumbnail difficult
+          to understand, especially on smaller screens.
+        </p>
+
+        <h4>Use readable text</h4>
+
+        <p>
+          If you include words, keep the message short and
+          make sure it remains readable at a small size.
+          Avoid filling the entire thumbnail with text.
+        </p>
+
+        <h4>Choose relevant images</h4>
+
+        <p>
+          Use visuals that accurately represent the video.
+          A gaming tutorial, for example, could show the game
+          or specific feature being explained.
+        </p>
+
+        <h4>Keep the design consistent</h4>
+
+        <p>
+          Consistent colors, fonts, and visual elements can
+          help viewers recognize your content. Experiment
+          with different designs while keeping the subject clear.
+        </p>
+
+        <h4>Helpful tip</h4>
+
+        <p>
+          Preview your thumbnail at a smaller size before
+          publishing. Check that the main subject and message
+          are still easy to recognize.
+        </p>
+      </article>
+
+      <hr>
+
+      <p>
+        <strong>Explore more:</strong>
+        Use the free CreatorFlow tools above to generate
+        content ideas, captions, hooks, descriptions, and
+        thumbnail concepts.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="panel" id="about">
+      <h2>About CreatorFlow</h2>
+
+      <p>
+        CreatorFlow is a free content creation toolkit designed
+        to help creators plan, organize, and develop their content.
+      </p>
+
+      <p>
+        Whether you're starting your first channel or already
+        creating content, CreatorFlow gives you simple tools
+        to make the creative process easier.
+      </p>
+
+      <p>
+        Our goal is to make content creation more accessible
+        by bringing useful creator tools together in one place.
+      </p>
+
+      <h3>Our Mission</h3>
+
+      <p>
+        Help creators spend less time figuring out what to post
+        and more time creating content they enjoy.
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="panel" id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>Is CreatorFlow free?</summary>
+        <p>Yes. CreatorFlow is currently free to use.</p>
+      </details>
+
+      <details>
+        <summary>What can I use CreatorFlow for?</summary>
+        <p>
+          You can generate content ideas, video titles, captions,
+          scripts, hooks, thumbnail ideas, and video descriptions.
+          You can also organize upcoming posts with the Content Planner.
+        </p>
+      </details>
+
+      <details>
+        <summary>Which platforms does CreatorFlow support?</summary>
+        <p>
+          CreatorFlow currently includes tools for YouTube,
+          TikTok, and Instagram.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do I need an account?</summary>
+        <p>No account is currently required to access the website's tools.</p>
+      </details>
+
+      <details>
+        <summary>Does CreatorFlow guarantee views or followers?</summary>
+        <p>
+          No. CreatorFlow provides creative tools and suggestions.
+          Content performance depends on many factors, and results
+          are never guaranteed.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can I contact CreatorFlow?</summary>
+        <p>
+          Contact us at
+          <a href="mailto:officialcreatorflow1@gmail.com">
+            officialcreatorflow1@gmail.com
+          </a>.
+        </p>
+      </details>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="panel" id="contact">
+      <h2>Contact CreatorFlow</h2>
+
+      <p>
+        Have a question, suggestion, or need assistance?
+        We'd be happy to hear from you.
+      </p>
+
+      <h3>Business &amp; Support Email</h3>
+
+      <p>
+        <a href="mailto:officialcreatorflow1@gmail.com">
+          officialcreatorflow1@gmail.com
+        </a>
+      </p>
+
+      <p>
+        For general questions, technical issues, or business
+        inquiries, please contact us using our official email.
+      </p>
+
+      <a
+        class="contact-button"
+        href="mailto:officialcreatorflow1@gmail.com?subject=CreatorFlow%20Inquiry"
+      >
+        Email CreatorFlow
+      </a>
+    </section>
+
+    <!-- PRIVACY POLICY -->
+    <section class="panel" id="privacy">
+      <h2>Privacy Policy</h2>
+
+      <p><strong>Last updated: November 19, 2026</strong></p>
+
+      <p>
+        CreatorFlow respects your privacy. This policy explains
+        what information is handled when you use our website.
+      </p>
+
+      <h3>Information You Enter</h3>
+
+      <p>
+        Information entered into CreatorFlow's generators is
+        processed directly in your browser to produce results.
+        The current JavaScript functionality does not send these
+        inputs to an external AI service or database.
+      </p>
+
+      <h3>Content Planner and Local Storage</h3>
+
+      <p>
+        CreatorFlow uses your browser's Local Storage to save
+        planned posts. This information remains in the browser
+        where it was saved and is not automatically synchronized
+        between devices.
+      </p>
+
+      <p>
+        Clearing your browser's stored website data may remove
+        saved planner entries.
+      </p>
+
+      <h3>Cookies and Analytics</h3>
+
+      <p>
+        The current CreatorFlow JavaScript does not intentionally
+        set tracking cookies or use analytics services.
+        Your hosting provider and browser may process technical
+        information when you access the website.
+      </p>
+
+      <h3>Third-Party Services</h3>
+
+      <p>
+        CreatorFlow is hosted through GitHub Pages.
+        Third-party services may have their own privacy policies
+        and data-handling practices.
+      </p>
+
+      <h3>Advertising and Third-Party Cookies</h3>
+
+      <p>
+        CreatorFlow may use third-party advertising services
+        in the future. If advertising is introduced, this policy
+        will be updated to explain applicable advertising
+        technologies, cookies, and data practices.
+      </p>
+
+      <h3>Children's Privacy</h3>
+
+      <p>
+        We do not intentionally request personal information
+        through the current website features. Please avoid entering
+        sensitive personal information into the tools.
+      </p>
+
+      <h3>Changes to This Policy</h3>
+
+      <p>
+        This policy may be updated as CreatorFlow develops
+        new features or changes its services.
+      </p>
+
+      <h3>Contact</h3>
+
+      <p>
+        For privacy-related questions, contact:
+        <a href="mailto:officialcreatorflow1@gmail.com">
+          officialcreatorflow1@gmail.com
+        </a>.
+      </p>
+    </section>
+
+    <!-- TERMS OF SERVICE -->
+    <section class="panel" id="terms">
+      <h2>Terms of Service</h2>
+
+      <p><strong>Last updated: November 19, 2026</strong></p>
+
+      <h3>Using CreatorFlow</h3>
+      <p>
+        By using CreatorFlow, you agree to use the website
+        responsibly and comply with applicable laws.
+      </p>
+
+      <h3>Free Tools</h3>
+      <p>
+        CreatorFlow currently provides its content creation tools
+        free of charge. Features may be changed, updated, or discontinued.
+      </p>
+
+      <h3>Content and Suggestions</h3>
+      <p>
+        Content generated by CreatorFlow is provided as creative
+        assistance. You are responsible for reviewing and deciding
+        how to use generated suggestions.
+      </p>
+
+      <h3>No Guarantees</h3>
+      <p>
+        CreatorFlow does not guarantee audience growth, views,
+        engagement, income, or other results.
+      </p>
+
+      <h3>Website Availability</h3>
+      <p>
+        We aim to keep CreatorFlow available, but uninterrupted
+        access is not guaranteed.
+      </p>
+
+      <h3>Contact</h3>
+      <p>
+        Questions about these terms can be sent to
+        <a href="mailto:officialcreatorflow1@gmail.com">
+          officialcreatorflow1@gmail.com
+        </a>.
+      </p>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="panel" id="disclaimer">
+      <h2>Disclaimer</h2>
+
+      <p>
+        CreatorFlow is an independent content creation toolkit.
+        It is not affiliated with, endorsed by, or officially
+        connected to YouTube, TikTok, or Instagram.
+      </p>
+
+      <p>
+        Platform names and trademarks belong to their respective owners.
+      </p>
+
+      <p>
+        Generated suggestions are not guarantees of content
+        performance or financial success.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <h2>Creator<span>Flow</span></h2>
+
+    <p>Your free content creation toolkit.</p>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#tools">Tools</a>
+      <a href="#resources">Resources</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Service</a>
+      <a href="#disclaimer">Disclaimer</a>
+    </div>
+
+    <p>
+      Contact:
+      <a href="mailto:officialcreatorflow1@gmail.com">
+        officialcreatorflow1@gmail.com
+      </a>
+    </p>
+
+    <p class="copyright">
+      © 2026 CreatorFlow. All rights reserved.
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
